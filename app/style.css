@@ -20,7 +20,8 @@
       width: 100%;
       height: 25px;
     }
-    form{
+    
+    form{ 
       display: flex;
       flex-direction: column;
     }
@@ -31,4 +32,15 @@
      color: white;
      background-color: #364D63;
     }
-    
+    .pass{
+        position: relative;
+    }
+  .hide{
+    position: absolute;
+    right: 0;
+    bottom: 14px;
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+  }  
