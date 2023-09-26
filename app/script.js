@@ -6,7 +6,7 @@ $(document).ready(function () {
       const email = $("#email").val();
       const password = $("#password").val();
       if(email){
-          if(password.length>=8){
+          if(passwordCheck()){
               const profile = {
                   email: email,
                   password: password,
@@ -23,5 +23,7 @@ $(document).ready(function () {
     });
     function passwordCheck(){
         const password = $("#password").val();
+        const pattern = /^(?=.*[$#@^])[\w$#@^]{8,16}$/;
+        return pattern.test(password);
     }
   });
